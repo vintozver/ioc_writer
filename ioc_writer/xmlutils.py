@@ -25,9 +25,6 @@ import cStringIO as sio
 from lxml import etree as et
 import logging
 
-# logging config
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s: %(message)s  [%(filename)s:%(funcName)s]')
-
 def read_xml(filename):
     '''
     read_xml
@@ -121,4 +118,4 @@ def read_xml_no_ns(filename):
     if parsedXML is None:
         return None
     return delete_namespace(parsedXML)
-    
+
